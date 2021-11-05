@@ -5,11 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="project.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>康威生命遊戲</title>
 </head>
 
-<body>
+<body onload="onload()">
     <canvas id="canvas"></canvas>
+    <select id="seeds" onchange="selectSeed(event)">
+        <option value="random">隨機產生細胞</option>
+        <option value="gun">Gosper glider gun</option>
+    </select>
+    <button onclick="start()" id="start">開始</button>
+    <button onclick="pass()" id="pass">暫停</button>
+    <br>
+    <button onclick="restart()" id="restart">重新開始</button>
 </body>
 <script src="project.js"></script>
 

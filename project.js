@@ -15,7 +15,7 @@ var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
 var map = {
     x: 230,
-    y: 144
+    y: 158
 }
 var speed = 100;
 var size = 5;

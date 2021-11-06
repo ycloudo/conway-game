@@ -142,8 +142,7 @@ function start() {
 //重新開始
 function restart() {
     pass();
-    construct();
-    draw();
+    onload();
 }
 //暫停
 function pass() {

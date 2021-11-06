@@ -7,6 +7,9 @@ $(document).ready(function () {
         document.getElementById("start").disabled = false;
     });
     $("#restart").click(function () {
+        $('#seeds option').prop('selected', function () {
+            return this.defaultSelected;
+        });
         document.getElementById("start").disabled = false;
         document.getElementById("seeds").disabled = false;
     });

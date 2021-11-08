@@ -3,11 +3,103 @@
     padding: 0;
 }
 body{
-    background:black;
+    background:aliceblue;
 }
 canvas{
+    /* border: cornflowerblue 1px solid; */
+    margin: 0;
     position: absolute;
     right: 0%;
     /* top: 50%; */
     /* transform: translate(-50%,-50%); */
 }
+.details{
+    left: 15px;
+    bottom: 15px;
+    top: 15px;
+    position: absolute;
+    height: 755px;
+    width: 340px;
+    border: cornflowerblue 5px solid;
+    border-radius: 7px;
+    box-shadow: 0 0 0 5px aliceblue;
+}
+.seeds{ 
+    font-size: 24px;
+    font-family: 'Noto Sans TC', sans-serif;
+    position: relative;
+    left: 12px;
+    top: 20px;
+    border-bottom: 2px solid;
+    width: 300px;
+}
+.d_buttons{
+    display: inline-flex;
+    position: relative;
+    left: 12px;
+    top: 50px;
+    width: 300px;
+    height: 150px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.d_buttons button{
+    font-size: 16px;
+    font-family: 'Noto Sans TC', sans-serif;
+    width: 130px;
+    height: 50px;
+    border-radius: 7px;
+    background-color: white;
+    color: black;
+    border: 2px solid #edbe6e;
+    transition-duration: 0.4s;
+}
+.d_buttons button:hover{
+    background-color: #edbe6e;
+    color: white;
+}
+.operate{
+    font-size: 24px;
+    font-family: 'Noto Sans TC', sans-serif;
+    position: relative;
+    left: 12px;
+    top: 100px;
+    border-bottom: 2px solid;
+    width: 300px;
+}
+.o_buttons{
+    display: inline-flex;
+    position: relative;
+    left: 12px;
+    top: 130px;
+    width: 300px;
+    height: 150px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.o_buttons button{
+    font-size: 16px;
+    font-family: 'Noto Sans TC', sans-serif;
+    width: 130px;
+    height: 50px;
+    border-radius: 7px;
+    background-color: white;
+    color: black;
+    border: 2px solid #edbe6e;
+    transition-duration: 0.4s;
+}
+.o_buttons button:hover{
+    background-color: #edbe6e;
+    color: white;
+}
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  pointer-events: none;
+}
+

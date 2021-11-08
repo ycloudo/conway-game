@@ -1,17 +1,23 @@
 $(document).ready(function () {
+    document.getElementById("restart").disabled = true;
     $("#start").click(function () {
-        document.getElementById("seeds").disabled = true;
+        document.getElementById("restart").disabled = false;
         document.getElementById("start").disabled = true;
+        document.getElementById("btn1").disabled = true;
+        document.getElementById("btn2").disabled = true;
+        document.getElementById("btn3").disabled = true;
+        document.getElementById("btn4").disabled = true;
     });
     $("#pass").click(function () {
         document.getElementById("start").disabled = false;
     });
     $("#restart").click(function () {
-        $('#seeds option').prop('selected', function () {
-            return this.defaultSelected;
-        });
         document.getElementById("start").disabled = false;
-        document.getElementById("seeds").disabled = false;
+        document.getElementById("restart").disabled = true;
+        document.getElementById("btn1").disabled = false;
+        document.getElementById("btn2").disabled = false;
+        document.getElementById("btn3").disabled = false;
+        document.getElementById("btn4").disabled = false;
     });
 });
 var canvas = document.getElementById("canvas");
@@ -152,7 +158,7 @@ function pass() {
     clearInterval(p);
 }
 //產生隨機細胞
-function random_seed() {
+function seed_random() {
     construct();
     seed();
     draw();
@@ -196,12 +202,5 @@ function seed_gun() {
     cells[3][36] = "black";
     cells[4][36] = "black";
     draw();
-}
-function selectSeed(evt) {
-    if (evt.target.value === "random") {
-        random_seed();
-    } else if (evt.target.value === "gun") {
-        seed_gun();
-    }
 }
 

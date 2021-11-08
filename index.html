@@ -4,21 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="project.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400&display=swap" rel="stylesheet">
     <title>康威生命遊戲</title>
 </head>
 
 <body onload="onload()">
     <canvas id="canvas"></canvas>
-    <select id="seeds" onchange="selectSeed(event)">
-        <option value="random">隨機產生細胞</option>
-        <option value="gun">Gosper glider gun</option>
-    </select>
-    <button onclick="start()" id="start">開始</button>
-    <button onclick="pass()" id="pass">暫停</button>
-    <button onclick="restart()" id="restart">重新開始</button>
+    <div class="details">
+        <div class="seeds">初始細胞樣式</div>
+        <div class="d_buttons" id="btns">
+            <button onclick="seed_random()" id="btn1">隨機產生細胞</button>
+            <button onclick="seed_gun()" id="btn2">Goseper <br> Glider Gun</button>
+            <button id="btn3"></button>
+            <button id="btn4"></button>
+        </div>
+        <div class="operate">操作</div>
+        <div class="o_buttons">
+            <button onclick="start()" id="start">開始</button>
+            <button onclick="pass()" id="pass">暫停</button>
+            <button onclick="restart()" id="restart">重新開始</button>
+        </div>
+
+    </div>
 </body>
+
+
 <script src="project.js"></script>
 
 </html>

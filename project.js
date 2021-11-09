@@ -26,7 +26,7 @@ var map = {
     x: 230,
     y: 158
 }
-var speed = 100;
+var speed = 5;
 var size = 5;
 canvas.width = map.x * size;
 canvas.height = map.y * size;
@@ -201,6 +201,58 @@ function seed_gun() {
     cells[4][35] = "black";
     cells[3][36] = "black";
     cells[4][36] = "black";
+    draw();
+}
+function seed_puslar() {
+    construct();
+    cells[25][55] = "black";
+    cells[25][56] = "black";
+    cells[25][57] = "black";
+    cells[25][61] = "black";
+    cells[25][62] = "black";
+    cells[25][63] = "black";
+    cells[27][53] = "black";
+    cells[28][53] = "black";
+    cells[29][53] = "black";
+    cells[27][58] = "black";
+    cells[28][58] = "black";
+    cells[29][58] = "black";
+    cells[27][60] = "black";
+    cells[28][60] = "black";
+    cells[29][60] = "black";
+    cells[27][65] = "black";
+    cells[28][65] = "black";
+    cells[29][65] = "black";
+    cells[30][55] = "black";
+    cells[30][56] = "black";
+    cells[30][57] = "black";
+    cells[30][61] = "black";
+    cells[30][62] = "black";
+    cells[30][63] = "black";
+    cells[32][55] = "black";
+    cells[32][56] = "black";
+    cells[32][57] = "black";
+    cells[32][61] = "black";
+    cells[32][62] = "black";
+    cells[32][63] = "black";
+    cells[33][53] = "black";
+    cells[34][53] = "black";
+    cells[35][53] = "black";
+    cells[33][58] = "black";
+    cells[34][58] = "black";
+    cells[35][58] = "black";
+    cells[33][60] = "black";
+    cells[34][60] = "black";
+    cells[35][60] = "black";
+    cells[33][65] = "black";
+    cells[34][65] = "black";
+    cells[35][65] = "black";
+    cells[37][55] = "black";
+    cells[37][56] = "black";
+    cells[37][57] = "black";
+    cells[37][61] = "black";
+    cells[37][62] = "black";
+    cells[37][63] = "black";
     draw();
 }
 

@@ -54,7 +54,7 @@ canvas{
     background-color: white;
     color: black;
     border: 2px solid #edbe6e;
-    transition-duration: 0.4s;
+    /* transition-duration: 0.4s; */
 }
 .d_buttons button:hover{
     background-color: #edbe6e;
@@ -89,12 +89,27 @@ canvas{
     background-color: white;
     color: black;
     border: 2px solid #edbe6e;
-    transition-duration: 0.4s;
+    /* transition-duration: 0.4s; */
 }
+/* .o_buttons button:first-child{
+    font-size: 16px;
+    font-family: 'Noto Sans TC', sans-serif;
+    width: 130px;
+    height: 50px;
+    border-radius: 7px;
+    background-color: white;
+    color: black;
+    border: 2px solid red;
+    transition-duration: 0.4s;
+} */
 .o_buttons button:hover{
     background-color: #edbe6e;
     color: white;
 }
+/* .o_buttons button:first-child:hover{
+    background-color: red;
+    color: white;
+} */
 button:disabled,
 button[disabled]{
   border: 1px solid #999999;
@@ -102,4 +117,15 @@ button[disabled]{
   color: #666666;
   pointer-events: none;
 }
+
+.setting{
+    font-size: 24px;
+    font-family: 'Noto Sans TC', sans-serif;
+    position: relative;
+    left: 12px;
+    top: 150px;
+    border-bottom: 2px solid;
+    width: 300px;
+}
+
 
